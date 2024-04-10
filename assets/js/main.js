@@ -92,5 +92,27 @@
 			});
 
 		}
+	// Wait for the DOM content to be fully loaded
+document.addEventListener("DOMContentLoaded", function() {
+    // Get the clickable section element
+    var clickableSection = document.querySelector('.clickable-section');
+
+    // Get the contact form element
+    var contactForm = document.querySelector('#Contact');
+
+    // Add click event listener to the clickable section
+    clickableSection.addEventListener('click', function(event) {
+        // Prevent the default behavior of the link
+        event.preventDefault();
+
+        // Toggle the visibility of the contact form
+        if (contactForm.style.display === 'block' || contactForm.style.display === '') {
+            contactForm.style.display = 'none';
+        } else {
+            contactForm.style.display = 'block';
+        }
+    });
+});
+
 
 })(jQuery);

@@ -384,7 +384,42 @@
 					});
 
 			}
-
+			document.addEventListener('DOMContentLoaded', function () {
+				// Get the form element
+				var form = document.getElementById('contact-form');
+			
+				// Add event listener for form submission
+				form.addEventListener('submit', function (event) {
+					// Prevent the default form submission
+					event.preventDefault();
+			
+					// Validate the form fields
+					if (validateForm()) {
+						// If validation passes, submit the form
+						form.submit();
+					}
+				});
+			
+				// Function to validate the form fields
+				function validateForm() {
+					var firstName = document.getElementById('first-name').value.trim();
+					var lastName = document.getElementById('last-name').value.trim();
+					var contactNumber = document.getElementById('contact-number').value.trim();
+					var email = document.getElementById('email').value.trim();
+					var message = document.getElementById('message').value.trim();
+			
+					// Simple validation for required fields
+					if (firstName === '' || lastName === '' || contactNumber === '' || email === '' || message === '') {
+						alert('All fields are required');
+						return false;
+					}
+			
+					// Additional validation can be added here if needed
+			
+					return true; // Return true if all validations pass
+				}
+			});
+			
 		// Initialize.
 
 			// Hide main, articles.

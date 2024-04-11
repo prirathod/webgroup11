@@ -6,13 +6,13 @@
 	 */
 	$.fn.navList = function() {
 
-		var	$this = $(this);
+		var $this = $(this);
 			$a = $this.find('a'),
 			b = [];
 
 		$a.each(function() {
 
-			var	$this = $(this),
+			var $this = $(this),
 				indent = Math.max(0, $this.parents('li').length - 1),
 				href = $this.attr('href'),
 				target = $this.attr('target');
@@ -56,7 +56,7 @@
 			}
 
 		// Vars.
-			var	$this = $(this),
+			var $this = $(this),
 				$body = $('body'),
 				$window = $(window),
 				id = $this.attr('id'),
@@ -191,7 +191,7 @@
 					||	$this.touchPosY === null)
 						return;
 
-					var	diffX = $this.touchPosX - event.originalEvent.touches[0].pageX,
+					var diffX = $this.touchPosX - event.originalEvent.touches[0].pageX,
 						diffY = $this.touchPosY - event.originalEvent.touches[0].pageY,
 						th = $this.outerHeight(),
 						ts = ($this.get(0).scrollHeight - $this.scrollTop());

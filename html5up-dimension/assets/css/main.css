@@ -726,7 +726,7 @@ input, select, textarea {
 /* Video */
 	video {
 	        display: block;
-	        margin: auto;
+	        margin: 0 auto;
 	      }
 
 /* List */

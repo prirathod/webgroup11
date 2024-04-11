@@ -76,15 +76,44 @@
 							</article>
 						
 						<!-- Methods -->
-						<article id="methods">
-							<h2 class="major">Methodology</h2>
-							<span class="image main"><img src="images/pic03.jpg" alt="" /></span>
-							<p>In our project, we adopted a multifaceted approach, integrating dashboards, story maps, and web maps to effectively address our problem statement. Furthermore, we utilized technical methods such as publishing CSV files as feature layers to augment the functionality and efficacy of our solutions.</p>
-							<span class="image main"><img src="images/pic02.jpg" alt="" /></span>
-							<p> Additionally, we actively retrieved live data from ArcGIS Online Living Atlas, ensuring the continuous relevance and reliability of our information. To enhance user experience, we implemented strategies to dynamically modify the data, including decluttering the map by toggling off unnecessary layers. </p>
-							<span class="image main"><img src="images/pic02.jpg" alt="" /></span>
-						<p>This meticulous approach aimed to provide users with clear and concise information, preventing the map from appearing overly cluttered or overwhelming. By amalgamating technical expertise with innovative strategies, our objective was to craft a seamless and intuitive platform for accessing real-time data on natural disasters in the USA and Canada.</p></article>
-
+							<article id="methods">
+								<h2 class="major">Methodology</h2>
+								<p>Our project adopted a multifaceted approach by creating web maps, and integrating dashboards and story maps to effectively address our problem statement. </p>
+								<h3>Data Acquisition</h3>
+								<p>To initiate our project, we undertook extensive research to acquire relevant data. 
+									Despite encountering numerous data sources, many were limited to historical events or provided static downloads. 
+									To ensure the continuous relevance and reliability of our information, we actively retrieved live data from ArcGIS Living Atlas. </p>
+							    
+								<h3>Data Processing</h3>
+								<p>Processing data directly on the web as opposed to local files and software is essential, as it allows for seamless integration of various data formats onto web platforms such as AGOL. 
+									Additionally, by processing data online, we ensure accessibility and collaboration among team members.</p>
+								<p>We were able to process various data formats onto the web, including csv, shapefile, json/geojson (feature layer), ogc wfs/wms web service, file geodatabase, arcgis server web service, ogc api, ...(what else). 
+									Here are some highlights of the importing process.</p>
+								<h4>CSV</h4>
+									<p>We published CSV files as feature layers to augment the functionality and efficacy of our solutions. ...(write more)</p>
+								<h4>WFS and WMS</h4>
+									<p>Utilizing WFS (Web Feature Service) and WMS (Web Map Service) was instrumental in updating the NASA FIRMS live wildfires data. 
+										Through an URL provided by NASA, the data was integrated seamlessly into our platform, ensuring its real-time nature. 
+										Additionally, enabling the "set refresh interval" feature ensures that the data is continuously updated at predefined intervals, maintaining its accuracy.</p>
+									<span class="image main"><img src="images/WFSimport.PNG" alt="" /></span>
+								<h4>Table Merging</h4>
+									<p>How the US and Canada data has been merged</p>
+								<h4>Masking Features on a Web Map</h4>
+									<p>Masking Features on a Web Map
+										Given that the live earthquake data source encompassed global events, masking techniques on AGOL were employed to focus solely on the US and Canada. 
+										This ensures that our web map provides relevant and localized information to our target audience.</p>
+									<span class="image main"><img src="images/Masking.PNG" alt="" /></span>
+								<h3>Web Platform Production</h3>
+								<p>To enhance user experience, we implemented strategies to dynamically modify the data, including decluttering the map by toggling off unnecessary layers. </p>
+								<p>......</p>
+								<h3>Concerns and Future Steps</h3>
+								<p>While the NASA FIRMS wildfire data provided live updates, we encountered challenges such as including non-relevant hotspots, like industrial emissions. 
+									In future trials, we aim to refine our data filtering techniques to enhance the accuracy of our visualizations. </p>
+								<p>Moreover, exploring scripting options to actively read updating csv files could further augment our data acquisition capabilities.</p>
+								<p>...... Things we didn't do? Things to improve?</p>
+								<!--<p>This meticulous approach aimed to provide users with clear and concise information, preventing the map from appearing overly cluttered or overwhelming. By amalgamating technical expertise with innovative strategies, our objective was to craft a seamless and intuitive platform for accessing real-time data on natural disasters in the USA and Canada.</p>-->
+							</article>
+						
 						<!-- About -->
 							<article id="about">
 								<h2 class="major">Deliverables</h2>

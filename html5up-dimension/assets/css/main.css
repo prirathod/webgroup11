@@ -724,10 +724,15 @@ input, select, textarea {
 		}
 
 /* Video */
-	video {
+	/* video {
 	        display: block;
-	        margin: 0 auto;
-	      }
+	        margin: auto;
+	      } */
+	video.center {	
+		display: block;	
+		margin-left: auto;	
+		margin-right: auto;	
+		}
 
 /* List */
 

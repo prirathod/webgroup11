@@ -739,6 +739,7 @@ input, select, textarea {
 		list-style: disc;
 		margin: 0 0 2rem 0;
 		padding-left: 1em;
+		font-family: times new roman;
 	}
 
 		ul li {

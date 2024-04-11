@@ -80,6 +80,7 @@ input, select, textarea {
 
 	*, *:before, *:after {
 		box-sizing: inherit;
+		color:yellow;
 	}
 
 	body {
